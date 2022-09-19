@@ -1,0 +1,38 @@
+# go to https://github.com/ultrabug/mkdocs-static-i18n
+# for reference demo
+
+site_name: "Kata.Games reference documentation"
+site_url: https://kata.games/developers
+repo_url: https://github.com/gaudiatech/katagames-glob-repo
+repo_counts: false
+
+theme:
+  name: material
+  font: false
+  icon:
+    logo: material/space-invaders
+  palette:
+    primary: deep purple
+
+plugins:
+    - search
+    - i18n:
+        languages:
+            en: "English"
+            fr: "Français"
+        default_language: "en"
+
+# can use the !!! tip block
+markdown_extensions:
+  - admonition
+
+
+extra:
+  # lang selector
+  alternate:
+    - name: English
+      link: ./en/ 
+      lang: en
+    - name: Français
+      link: ./fr/
+      lang: fr
