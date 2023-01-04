@@ -19,8 +19,11 @@ simple game
 Creating simple games is as easy as sub-classing the `kengi.GameTpl` abstract class.
 You will need to redefine the `.enter(vms=None)` method of this class.
 
-In case you need to add GUI elements to your game,
-check out the [dedicated page](gui).
+There are many other useful features that you can explore and use via `kengi`. For creating more complex games you may want to:
+
+* add GUI elements to your game, check our [Building the GUI](gui) dedicated page
+* create a multiplayer game that has network capabilities... To learn more about that topic check out the [Network code](networking) page
+
 
 ## Creating more complex games
 
